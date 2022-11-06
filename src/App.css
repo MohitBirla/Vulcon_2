@@ -1,38 +1,266 @@
-.App {
-  text-align: center;
+body{
+  overflow-x: hidden !important;
+  font-family: "Beatrix Antiqua" !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_login{
+  background-image: url(/public/images/vulcan\ background.png) !important;
+  background-repeat: no-repeat;
+  width:100% !important;
+  background-position: center;
+  height:100%;
+  background-size:auto !important;
+  padding: 7% !important;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-2{
+  width: 500px;
+  height: 500px;
+  background-color:rgba(244, 242, 236, 0.3);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 5%;
+  margin-top: auto !important;
+font-family:monospace !important;
+border-radius: 10px;
+
+}
+.main-2 h1{
+font-family:monospace;
+font-weight: bold;
+}
+.main-3 h1{
+  font-size: 150px !important;
+  font-weight: bold;
+  letter-spacing: -10px !important;
   color: white;
+  text-align: center;
+  justify-content: center;
+}
+.main-3 P{
+  font-size: 50px !important;
+  letter-spacing: -1px !important;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+.main_login p{
+  font-family: monospace;
+  font-weight: bold;
+  word-spacing: 5px !important;
+}
+.login_btn{
+  font-weight: bold !important;
+  color: white !important;
+  background: -webkit-linear-gradient(rgb(252, 187, 7), rgb(236, 117, 21));
+  line-height: 30px !important;
+  font-size: 'Beatrix Antiqua' !important;
+  padding: 2% 8% 2% 8% !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* ////////////////////////// Dashboard ///////////////////////////////////// */
+.main_dashboard {
+  background-image: url(/public/images/background-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blur_color{
+   background: rgba(0, 0, 0, 0.3) !important;
+}
+.side_main{
+  padding-bottom: 5%!important;
+}
+.side_bar_div{
+  padding: 1% 4% !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .side-nav-link:hover{
+  cursor: pointer;
+  color: #ed9600 !important;
+}
+
+.side-nav-link{
+  color:white !important ;
+  cursor: pointer;
+
+}
+
+
+
+/* ///// My Fund & My Assets///////// */
+.card-title{
+/* font-family: 'Beatrix Antiqua' !important; */
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+}
+
+thead{
+   border-bottom: 1px solid #f26000 !important;
+ 
+}
+thead th{
+  padding: 1% !important;
+  color: white !important;
+  font-weight: bold;
+}
+tbody tr th,td{
+  color: #989FAE !important;
+  padding: 1% !important;
+
+}
+tbody tr:hover{
+  background-color:#395144 !important;
+}
+
+.all_events_box {
+  border-bottom: 2px dashed #f26000;
+}
+
+.tabs_events.nav-pills button.active,
+.nav-pills .show>.button {
+  background: linear-gradient(180deg, #F59E00 0%, #9F4A00 87.5%);
+  border-radius: 5px;
+  border: 2px solid none !important;
+
+
+  border-bottom: 3px solid;
+}
+
+.tabs_events.nav-pills button {
+  padding: 10px 35px;
+  transition: ease 0.5s;
+  font-family: 'Beatrix Antiqua' ;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #f6a819c5 !important;
+  background-color:transparent;
+}
+.tabs_events.nav-pills button:hover{
+  background: linear-gradient(180deg, #F59E00 0%, #9F4A00 87.5%);
+border-radius: 5px;
+}
+/* ///////////////////////// */
+.tabs_events1.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background: linear-gradient(180deg, #F59E00 0%, #9F4A00 87.5%);
+  border-radius: 15px;
+  color: white !important;
+}
+
+.card-main{
+  /* background-color: #2E3036 !important; */
+  padding: 5% !important;
+  border-radius: 5px;
+  background: none;
+}
+.OrangeText {
+  color: #f26000;
+}
+.BtnBorder {
+  position: relative;
+  font-family: "Trueno SemiBold";
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+  color: #fff;
+  z-index: 1;
+  padding: 12px 16px !important;
+}
+.bg-transparent {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
+}
+.BtnBorder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  padding: 2px;
+background: linear-gradient(180deg, #F59E00 0%, #9F4A00 87.5%);
+  mask-composite: exclude;
+  z-index: -1;
+}
+.border-0 {
+  border: 0 !important;
+}
+
+.form-control.h-pxl-48, .form-select.h-pxl-48 {
+  min-height: 48px;
+}
+.form-control, .form-select {
+  background-color: #202022;
+  border-color: #6A6F7766;
+  min-height: 40px;
+  color: #707070;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.g-1, .gx-1 {
+  --bs-gutter-x: 0.5rem !important;
+}
+.form-control.h-pxl-48, .form-select.h-pxl-48 {
+  min-height: 48px;
+}
+.form-control, .form-select {
+  background-color: #202022 !important ;
+  border-color: #6A6F7766 !important;
+  min-height: 40px;
+  color: #707070 !important;
+}
+.rounded-1 {
+  border-radius: 0.5rem !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* ///// My Fund & My Assets End///////// */
+
+/* ////////////////////////////////// media Queries /////////////////////////////////////////////// */
+
+@media screen and (max-width: 1200px) {
+  
+  .signInCarousel {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .table-container{
+    overflow: scroll;
+  }
+  .top_main{
+    padding: 0% !important;
+  }
+  .side_bar_div{
+    padding: 0.5% !important;
   }
 }
